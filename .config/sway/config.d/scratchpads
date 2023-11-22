@@ -1,0 +1,20 @@
+# # Set size
+# set $sp-size 1155 715
+# # Exec at start
+# exec $term --class sp-term
+# exec $term --class sp-lf -e lf
+# exec $term --class sp-cal -e calcurse
+# exec $term --class sp-mus -e ncmpcpp
+# exec $term --class sp-nmt -e nmtui
+# # And hide it
+# for_window [app_id="sp-term"] move scratchpad, resize set $sp-size
+# for_window [app_id="sp-lf"] move scratchpad, resize set $sp-size
+# for_window [app_id="sp-cal"] move scratchpad, resize set $sp-size
+# for_window [app_id="sp-mus"] move scratchpad, resize set $sp-size
+# for_window [app_id="sp-nmt"] move scratchpad, resize set $sp-size
+# # Keybind to show
+# bindsym $mod+Shift+Return [app_id="sp-term"] scratchpad show
+# bindsym $mod+e [app_id="sp-lf"] scratchpad show
+# bindsym $mod+c [app_id="sp-cal"] scratchpad show
+# bindsym $mod+Shift+m [app_id="sp-mus"] scratchpad show
+# bindsym $mod+Ctrl+n [app_id="sp-nmt"] scratchpad show
