@@ -5,6 +5,8 @@ My Monochrome and Minimal theme for Debian Sway.
 
 
 
+# DOTFILES ARE NOT COMPLETE. THIS IS STILL A WORK IN PROGRESS. #
+
 # The Setup 
 
 ## Current
