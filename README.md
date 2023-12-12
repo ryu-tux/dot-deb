@@ -1,16 +1,16 @@
 # Debian - Dots
 My Monochrome and Minimal theme for Debian Sway.
 (WIP for the install script, as i'm still new to scripting.)
-![image](https://github.com/ryu-tux/dotfiles/assets/116711909/42ae0c95-2123-43ee-8e44-e88955e72847)
+![image](https://github.com/ryu-tux/dot-deb/assets/116711909/58647ebd-eb90-44b9-9e1d-9b929408b357)
+
 
 
 # The Setup 
 
 ## Current
-- Dual Boot with Windows
-- Ext4 , 20GB
-- 512MB `/boot/efi` | max `/`
-- No Swap (Main Purpose was pretty much just to handle my dotfiles, maybe soon if I fully switch)
+- Switched to Debian
+- Ext4
+- 512MB `/boot/efi` | 16GB `swap` | max `/`
 
 ## Laptop Specs
 ### Asus X441na
@@ -20,7 +20,7 @@ My Monochrome and Minimal theme for Debian Sway.
   
 ## Distro
 - Debian Stable
-- Default Kernel
+- Liquorix Kernel
 - Nix : The Package Manager (more up-to-date packages)
 
 ## Login Manager
@@ -38,6 +38,7 @@ My Monochrome and Minimal theme for Debian Sway.
 - swaync
 - Hack Font
 - Fira Code
+- etc.
 
 ## Waybar Font
 - Terminus
@@ -52,16 +53,9 @@ My Monochrome and Minimal theme for Debian Sway.
 - Joplin
 - nwg-look (used nix for this, compiling takes pretty long on stable)
 - lxapperance
+- etc.
 
-  ### Install Script (Not yet tested, do not try until this warning is gone.)
-  - Clone repo
-     - `git clone https://github.com/ryu-tux/dot-deb.git`
-  - Append chmod to `buckle.sh`
-     - `chmod a+x buckle.sh`
-  - Launch Script
-      - `./buckle.sh`
-
-    ### Once Again, my install script is not yet fully working, I will update this ASAP. ###
+  ### install script halted, revamping for better measures. ###
 
 # Huge Credits 
 
@@ -70,5 +64,17 @@ My Monochrome and Minimal theme for Debian Sway.
 
 ### For my waybar template 
 [https://github.com/chaibronz/waybar_conf](url)
+
+### Firefox i3wm/qutebrowser look
+[https://github.com/Dook97/firefox-qutebrowser-userchrome](url)
+
+### GTK Theme
+[https://gitlab.com/tearch-linux/artworks/themes-and-icons/adwaita-dark-amoled](url)
+
+### Icons
+[https://github.com/PapirusDevelopmentTeam/papirus-icon-theme](url)
+
+
+- Big thanks to [vlk](https://github.com/REALERvolker1) for reviewing my dotfiles
 
 
