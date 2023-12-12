@@ -44,25 +44,6 @@ My Monochrome and Minimal theme for Debian Sway.
 
 ## Programs used
 - Firefox Dev Edition
-  ### Proceed with Caution, Read before copy and pasting!! :
-  
-### Create a directory to store APT repository keys if it doesn't exist:
-```
-sudo install -d -m 0755 /etc/apt/keyrings
-
-# Import the Mozilla APT repository signing key:
-wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
-
-# The fingerprint should be 35BAA0B33E9EB396F59CA838C0BA5CE6DC6315A3
-gpg -n -q --import --import-options import-show /etc/apt/keyrings/packages.mozilla.org.asc | awk '/pub/{getline; gsub(/^ +| +$/,""); print "\n"$0"\n"}'
-
-# Next, add the Mozilla APT repository to your sources list:
-echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
-
-# Update your package list and install the Firefox .deb package:
-sudo apt-get update && sudo apt-get install firefox-beta  # Replace "beta" by "devedition" for Developer Edition
-```
-
 - Neovim + Astrovim
 - OBS Studio
 - PCManFM
@@ -72,6 +53,16 @@ sudo apt-get update && sudo apt-get install firefox-beta  # Replace "beta" by "d
 - nwg-look (used nix for this, compiling takes pretty long on stable)
 - lxapperance
 
+  ### Install Script (Not yet tested, do not try until this warning is gone.)
+  - Clone repo
+     - `git clone https://github.com/ryu-tux/dot-deb.git`
+  - Append chmod to `buckle.sh`
+     - `chmod a+x buckle.sh`
+  - Launch Script
+      - `./buckle.sh`
+
+    ### Once Again, my install script is not yet fully working, I will update this ASAP. ###
+
 # Huge Credits 
 
 ### For my debian sway template to work on 
@@ -80,4 +71,4 @@ sudo apt-get update && sudo apt-get install firefox-beta  # Replace "beta" by "d
 ### For my waybar template 
 [https://github.com/chaibronz/waybar_conf](url)
 
-`definitely forgot some stuffs to add, but this is a good bit for now, i'll update this often as i slowly work on my install script`
+
